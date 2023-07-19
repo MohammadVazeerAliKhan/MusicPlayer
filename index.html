@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Melody</title>
+    <script src="https://kit.fontawesome.com/540c70c2f8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Media/Images/Logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Part similar to all webpages for this Music player -->
+    <header class="nav-bar">
+        <div class="logo-fav">
+            <!-- Website Logo and Website Name-->
+            <div class="logo-name">
+                <div class="logo logo-anime">
+                    <a href="#"><img src="Media/Images/Logo/faviconbgtransparent.png" alt="Logo"> </a>
+                </div>
+
+                <div class="website-name">
+                    <h4>Music</h4>
+                    <h3>Melody</h3>
+                </div>
+            </div>
+            <!-- Nav item- Favorites -->
+            <div class="fav">
+                <a href="#"><h3>Favorites</h3></a>
+            </div>
+        </div>
+
+        <!-- Search bar and icons -->
+        <div class="search-login">
+            <form id="searchbar" action="#">
+                <button id="search-btn" type="submit" cursor="pointer"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input id="search-text" type="text" placeholder="Search...">
+                <button id="mic-btn" type="submit" cursor="pointer"><i class="fa-solid fa-microphone"></i></button>
+            </form>
+            <!-- Notifications icon -->
+            <div class="notifications">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <!-- Login/Signup Page -->
+            <div class="login-link">
+                <a href="#"><img src="Media/Images/collections/col1.jpg" alt=""></a>
+            </div>
+        
+        </div>
+        <!-- Nav items of Hamburger for smaller screen  -->
+        <div class="dropdown-menu">
+            <a href="#dd-opt"> <i class="fa-solid fa-bars"></i></a>
+            <div id="dd-opt">
+                <ul>
+                    <li><a href="#">Home</a></li><hr>
+                    <li><a href="#">Search</a></li><hr>
+                    <li><a href="#">Notifications</a></li><hr>
+                    <li><a href="#">Log In/Sign Up</a></li><hr>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- Main page starts here all the content of the page is divided to sections and fixing the main element -->
+
+    <main class="scroll-hide">
+        <h1>Experience Live Podcasts!</h1>
+        <!-- Collection of Banners -->
+        <section class="collections">
+            <div>
+                <img src="Media/Images/collections/collect1.jpg" alt="">
+            </div>
+            <div>
+                <img src="Media/Images/collections/collect2.jpg" alt="">
+
+            </div>
+            <div>
+                <img src="Media/Images/collections/collect3.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- Latest Hits -->
+        <section class="latest-releases">
+            <h1 class="section-heading">Latest Hits</h1>
+            <div class="latest-songs">
+                <!-- Start playing the music on clicking the images -->
+                <div class="new-song">
+                    <div class="sng-img">
+                        <a href="#player"><img class="lat-rel-img" src="Media/Images/Artists/emiwaybantai.jpg" alt="emiway"></a>
+                        <i class="fa-sharp fa-solid fa-play play-but"></i>    
+                        <i  class="fa-solid fa-pause pause-but"></i>
+                    </div>
+
+                    <div class="sng-title">
+                        <p>Scene Change, Emiway <br>APR 01, 2023</p>
+                    </div>
+                    <div class="sng-det">
+                        <span>...</span>
+                        <div class="play-menu">
+                            <!-- options to add songs to lists and info -->
+                            <p> Play Now</p> 
+                            <hr>
+                            <p>Add to Favorites</p>
+                            <hr>
+                            <p>Add to Playlists</p>
+                            <hr>
+                            <p>Song Info</p>
+                        </div>
+                        <p>03:23</p>
+                    </div>                    
+                </div>
+
+                <div class="new-song">
+                    <div class="sng-img">
+                        <a href="#player"><img class="lat-rel-img" src="Media/Images/Artists/honeysingh.jpg" alt="emiway"></a>
+                        <i class="fa-sharp fa-solid fa-play play-but"></i>    
+                        <i  class="fa-solid fa-pause pause-but"></i>
+                    </div>
+                    <div class="sng-title">
+                        <p>Blue Eyes, Honey Singh <br> APR 23, 2023</p>
+                    </div>
+                    <div class="sng-det">
+                        <span>...</span>
+                        <div class="play-menu">
+                            <!-- options to add songs to lists and info -->
+                            <p> Play Now</p> 
+                            <hr>
+                            <p>Add Favorites</p>
+                            <hr>
+                            <p>Add Playlists</p>
+                            <hr>
+                            <p>Song Info</p>
+                        </div>
+                        <p>05:14</p>
+                    </div>                    
+                </div>
+
+                <div class="new-song">
+                    <div class="sng-img">
+                        <a href="#player"><img class="lat-rel-img" src="Media/Images/Artists/stan.jpg" alt="emiway"></a>
+                        <i class="fa-sharp fa-solid fa-play play-but"></i>    
+                        <i  class="fa-solid fa-pause pause-but"></i>
+                    </div>
+                    <div class="sng-title">
+                        <p>Amin HR, MC Stan <br> FEB 3, 2023</p>
+                    </div>
+                    <div class="sng-det">
+                        <span>...</span>
+                        <div class="play-menu">
+                            <!-- options to add songs to lists and info -->
+                            <p> Play Now</p> 
+                            <hr>
+                            <p>Add Favorites</p>
+                            <hr>
+                            <p>Add Playlists</p>
+                            <hr>
+                            <p>Song Info</p>
+                        </div>
+                        <p>04:47</p>
+                    </div>                    
+                </div>
+
+                <div class="new-song">
+                    <div class="sng-img">
+                        <a href="#player"><img class="lat-rel-img" src="Media/Images/Artists/sidsriram.jpg" alt="emiway"></a>
+                        <i class="fa-sharp fa-solid fa-play play-but"></i>    
+                        <i  class="fa-solid fa-pause pause-but"></i>
+                    </div>
+                    <div class="sng-title">
+                        <p>Srivalli, Sid Sriram <br> JAN 28, 2023</p>
+                    </div>
+                    <div class="sng-det">
+                        <span>...</span>
+                        <div class="play-menu">
+                            <!-- options to add songs to lists and info -->
+                            <p> Play Now</p> 
+                            <hr>
+                            <p>Add Favorites</p>
+                            <hr>
+                            <p>Add Playlists</p>
+                            <hr>
+                            <p>Song Info</p>
+                        </div>
+                        <p>03:23</p>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Artists redirecting to their respective playlists -->
+        <section>
+            <!-- I have added created a detailed artist page for a single artist and linked it to all the artists -->
+            <h1 class="section-heading">Popular Artists</h1>
+            <div class="popular-artists">
+                <div id="dhvani" class="artist">
+                    <div><a href="dhvani.html"><img src="Media/Images/Artists/dhvanibhanushali.jpg" alt="Dhvani"></a></div>
+                    <p>Dhvani</p>
+                </div>
+                
+                <div id="Arijit" class="artist">
+                    <div><a href="arijith.html"><img src="Media/Images/Artists/arijithsingh.jpg" alt="Arijith"></a></div>
+                    <p>Arijith</p>
+                </div>
+                
+                <div id="selena" class="artist">
+                    <div><a href="selena.html"><img src="Media/Images/Artists/selenagomez.jpg" alt="Selena"></a></div>
+                    <p>Selena</p>
+                </div>
+
+                <div id="badshah" class="artist">
+                    <div><a href="badshah.html"><img src="Media/Images/Artists/Badshah.jpg" alt="honeysingh"></a></div>
+                    <p>Badshah</p>
+                </div>
+
+                <div id="shreya" class="artist">
+                    <div><a href="shreya.html"><img src="Media/Images/Artists/shreyaghoshal.jpg" alt="Shreya Ghoshal"></a></div>
+                    <p>Shreya</p>
+                </div>
+                <div id="stan" class="artist">
+                    <div><a href="stan.html"><img src="Media/Images/Artists/stan.jpg" alt="stan"></a></div>
+                    <p>Stan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stations, mood based music list -->
+        <section>
+            <div class="stations">
+                <div id = "station-logo" >
+                    <img src="Media/Images/Stations/stations.jpg" alt="">
+                    <h4>Stations</h4>
+                </div>
+
+                <!-- <div id="station-types"> -->
+                    <div class="station-type">
+                        <img src="Media/Images/Stations/pop.jpg" alt="">
+                        <div class="station-name"><h4>Pop</h4></div>
+                    </div>
+                    <div class="station-type">
+                        <img src="Media/Images/Stations/love.jpg" alt="">
+                        <div class="station-name"><h4>Love</h4></div>
+                    </div>
+                    <div class="station-type"> 
+                        <img src="Media/Images/Stations/chill.jpg" alt="">
+                        <div class="station-name"><h4>Chill</h4></div>
+                    </div>
+                    <div class="station-type">
+                        <img src="Media/Images/Stations/workout.jpg" alt="">
+                        <div class="station-name"><h4>Gym</h4></div>
+                    </div>
+                    <div class="station-type">
+                        <img src="Media/Images/Stations/rock.jpg" alt="">
+                        <div class="station-name"><h4>Rock</h4></div>
+                    </div>
+                    <div class="station-type">
+                        <img src="Media/Images/Stations/retro.jpg" alt="">
+                        <div class="station-name"><h4>Retro</h4></div>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+        </section>
+
+        <!-- Songs based on different themes -->
+        <section>
+            <div class="theme-section">
+                <div>
+                    <img class="theme" src="Media/Images/Stations/party.jpg" alt="">
+                    <h1>Party</h1>
+                </div>
+                <div>
+                    <img class="theme" src="Media/Images/Stations/electronic.jpg" alt="">
+                    <h1>Electronic</h1>
+                </div>
+                <div>
+                    <img class="theme" src="Media/Images/Stations/roadtrip.jpg" alt="">
+                    <h1>Road Trip</h1>
+                </div>
+            </div>
+    
+        </section>
+
+        <!-- Latest hollywood collection -->
+        <section>
+            <h1 class="section-heading">Latest English Releases</h1>
+            <div class="latest-hinglish">
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/selenagomez.jpg" alt="">
+                    <h3>Taki</h3>
+                    <h4>Selena, JAN 2023</h4>
+                </div>
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/edsheeran.jpg" alt="">
+                    <h3>Shape of You</h3>
+                    <h4>Sheeran, MAR 2023</h4>
+                </div>
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/selenagomez.jpg" alt="">
+                    <h3>Calm Down</h3>
+                    <h4>Selena, JAN 2023</h4>
+                </div>
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/edsheeran.jpg" alt="">
+                    <h3>Shape of You</h3>
+                    <h4>Sheeran, MAR 2023</h4>
+                </div>
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/selenagomez.jpg" alt="">
+                    <h3>Taki</h3>
+                    <h4>Selena, JAN 2023</h4>
+                </div>
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/edsheeran.jpg" alt="">
+                    <h3>Shape of You</h3>
+                    <h4>Sheeran, MAR 2023</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Bollywood collection -->
+        <section>
+            <h1 class="section-heading">Latest Hindi Releases</h1>
+            <div class="latest-hinglish">
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/Badshah.jpg" alt="">
+                    <h3>Paagal</h3>
+                    <p>Badshah, APR 2023</p>
+                </div>
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/honeysingh.jpg" alt="">
+                    <h3>Blue Eyes</h3>
+                    <p>Honey, MAR 2023</p>
+                </div>
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/Badshah.jpg" alt="">
+                    <h3>Mercy</h3>
+                    <p>Badshah, APR 2023</p>
+                </div>
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/shreyaghoshal.jpg" alt="">
+                    <h3>Pyscho</h3>
+                    <p>Shreya, FEB 2023</p>
+                </div>
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/arijithsingh.jpg" alt="">
+                    <h3>Ae Dil</h3>
+                    <p>Arijith, APR 2023</p>
+                </div>
+                <div class="latest-song">
+                    <img src="Media/Images/Artists/dhvanibhanushali.jpg" alt="">
+                    <h3>Vaasthe</h3>
+                    <p>Dhvani, FEB 2023</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Adding Queue of songs to aside section -->
+    <aside>
+        <header class="aside-header">
+            <h1 id="aside-h1" class="aside-heading">Queue </h1>
+            
+            <div class="queue-options">
+                <span>Queue</span>
+                <div id="queue-content">
+                    <p>Play Now</p>
+                    <hr>
+                    <p>Add to Favorites</p>
+                </div>
+            </div>
+
+        </header>
+
+        <div id="aside-content" class="scroll-hide">
+        <!-- Songs list -->
+        <ol>
+            <li>
+                <div class="song-queue">
+                    <h3>01</h3>
+                    <img src="Media/Images/Artists/stan.jpg" alt="">
+                    <h4>Amin <br> <p> Stan</p></h4> 
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>02</h3>
+                    <img src="Media/Images/Artists/selenagomez.jpg" alt="">
+                    <h4>Taki Taki <p>Selena</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>03</h3>
+                    <img src="Media/Images/Artists/Badshah.jpg" alt="">
+                    <h4>Mercy<p> Badshah</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>04</h3>
+                    <img src="Media/Images/Artists/dhvanibhanushali.jpg" alt="">
+                    <h4>Vaasthe <p>Dhvani</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>05</h3>
+                    <img src="Media/Images/Artists/arijithsingh.jpg" alt="">
+                    <h4>Ae Dil<p>Arijith</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>06</h3>
+                    <img src="Media/Images/Artists/stan.jpg" alt="">
+                    <h4>Astagfrullah <br> <p> Stan</p></h4> 
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>07</h3>
+                    <img src="Media/Images/Artists/selenagomez.jpg" alt="">
+                    <h4>Calm Down <p>Selena</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>08</h3>
+                    <img src="Media/Images/Artists/Badshah.jpg" alt="">
+                    <h4>Akh Lad<p> Badshah</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>09</h3>
+                    <img src="Media/Images/Artists/honeysingh.jpg" alt="">
+                    <h4>Blue Eyes <p>Honey Singh</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>10</h3>
+                    <img src="Media/Images/Artists/arijithsingh.jpg" alt="">
+                    <h4>Arijith Mashup<p>Arijith</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>11</h3>
+                    <img src="Media/Images/Artists/emiwaybantai.jpg" alt="">
+                    <h4>Scene<br> <p> Emiway</p></h4> 
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>12</h3>
+                    <img src="Media/Images/Artists/edsheeran.jpg" alt="">
+                    <h4>Shape of You <p>Ed Sheeran</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>13</h3>
+                    <img src="Media/Images/Artists/sidsriram.jpg" alt="">
+                    <h4>Srivalli<p> Sriram</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>14</h3>
+                    <img src="Media/Images/Artists/shreyaghoshal.jpg" alt="">
+                    <h4>Chikni Chameli <p>Shreya</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>15</h3>
+                    <img src="Media/Images/Artists/arijithsingh.jpg" alt="">
+                    <h4>Kesariya<p>Arijith</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>16</h3>
+                    <img src="Media/Images/Artists/shreyaghoshal.jpg" alt="">
+                    <h4>Barso Re <br> <p> Shreya</p></h4> 
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>17</h3>
+                    <img src="Media/Images/Artists/sidsriram.jpg" alt="">
+                    <h4>Baguntundi<p>Sriram</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>18</h3>
+                    <img src="Media/Images/Artists/Badshah.jpg" alt="">
+                    <h4>Genda Phool<p> Badshah</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>19</h3>
+                    <img src="Media/Images/Artists/honeysingh.jpg" alt="">
+                    <h4>Dheere Dheere <p>Honey Singh</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+            <li>
+                <div class="song-queue">
+                    <h3>20</h3>
+                    <img src="Media/Images/Artists/emiwaybantai.jpg" alt="">
+                    <h4>Company<p>Emiway</p></h4>
+                    <i class="fa-solid fa-heart" style="color: #787878;"></i>
+
+                </div>
+            </li>
+        </ol>
+
+    </aside>
+
+    <!-- Music Player controls at the screen bottom -->
+    <footer id="player">
+        <div class="player-width">
+            <div><img src="Media/Images/Artists/arijithsingh.jpg" alt=""></div>
+            <h4>Love Mashup by Arijith Singh</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <i class="fa-solid fa-angle-left"></i>            
+            <i class="fa-sharp fa-solid fa-play"></i>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

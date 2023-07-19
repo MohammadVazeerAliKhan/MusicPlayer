@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Melody</title>
+    <script
+      src="https://kit.fontawesome.com/540c70c2f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="Media/Images/Logo/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Part similar to all webpages for this Music player -->
+    <header class="nav-bar">
+      <div class="logo-fav">
+        <!-- Website Logo and Website Name-->
+        <div class="logo-name">
+          <div class="logo logo-anime">
+            <a href="index.html"
+              ><img
+                src="Media/Images/Logo/faviconbgtransparent.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+
+          <div class="website-name">
+            <h4>Music</h4>
+            <h3>Melody</h3>
+          </div>
+        </div>
+        <!-- Nav item- Favorites -->
+        <div class="fav">
+          <a href="#"><h3>Favorites</h3></a>
+        </div>
+      </div>
+
+      <!-- Search bar and icons -->
+      <div class="search-login">
+        <form id="searchbar" action="#">
+          <button id="search-btn" type="submit" cursor="pointer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input id="search-text" type="text" placeholder="Search..." />
+          <button id="mic-btn" type="submit" cursor="pointer">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+        </form>
+        <!-- Notifications icon -->
+        <div class="notifications">
+          <i class="fa-regular fa-bell"></i>
+        </div>
+        <!-- Login/Signup Page -->
+        <div class="login-link">
+          <a href="#"><img src="Media/Images/collections/col1.jpg" alt="" /></a>
+        </div>
+      </div>
+      <!-- Nav items of Hamburger for smaller screen  -->
+      <div class="dropdown-menu">
+        <a href="#dd-opt"> <i class="fa-solid fa-bars"></i></a>
+        <div id="dd-opt">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <hr />
+            <li><a href="#">Search</a></li>
+            <hr />
+            <li><a href="#">Notifications</a></li>
+            <hr />
+            <li><a href="#">Log In/Sign Up</a></li>
+            <hr />
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Main page starts here all the content of the page is divided to sections and fixing the main element -->
+
+    <main class="scroll-hide artist-biography-playlist">
+      <section id="artist-about">
+        <div id="artist-img">
+          <a href="#player"
+            ><img src="Media/Images/Artists/stan.jpg" alt=""
+          /></a>
+        </div>
+        <div id="artist-info">
+          <h1>Mic Controller Stan</h1>
+          <p>
+            MC Stan Wiki Biography-One of the newest hip-hop and rap musicians
+            from Pune, Maharashtra, India, goes by the stage name MC Stan or his
+            real name Altaf Tadavi or Altaf Shaikh. He was one of the most
+            contentious rappers in the Indian rap music scene and the Desi
+            hip-hop culture when he was born on August 30, 1999. In 2018, he
+            dropped his debut single, “Wata,” and ever since then, he's been on
+            a trailblazing quest to keep dropping hits. He has a number of songs
+            to his credit, and his most recent single, "Shana Bann," is
+            dominating the Indian rap music charts. One of India's most talented
+            and youthful rappers is Altaf Tadavi, better known by his stage name
+            MC Stan.
+          </p>
+        </div>
+      </section>
+
+      <section class="artist-playlist">
+        <header><h1>Play the best collection</h1></header>
+        <ol>
+          <li>
+            <div class="song-queue">
+              <h3>01</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Amin
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>02</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Astagfrullah
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+          <li>
+            <div class="song-queue">
+              <h3>03</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Amin
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>04</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Astagfrullah
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+          <li>
+            <div class="song-queue">
+              <h3>05</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Amin
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>06</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Astagfrullah
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+          <li>
+            <div class="song-queue">
+              <h3>07</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Amin
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>08</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Astagfrullah
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+          <li>
+            <div class="song-queue">
+              <h3>09</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Amin
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>10</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Astagfrullah
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+          <li>
+            <div class="song-queue">
+              <h3>11</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Amin
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>12</h3>
+              <img src="Media/Images/Artists/stan.jpg" alt="" />
+              <h4>
+                Astagfrullah
+                <p>Stan</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <div class="scroll-hide aside-1">
+      <h1 class="aside-heading">Similar Artists</h1>
+
+      <ol>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/honeysingh.jpg" alt="" />
+            <h4>Honey Singh</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/emiwaybantai.jpg" alt="" />
+            <h4>Emiway Bantai</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/shreyaghoshal.jpg" alt="" />
+            <h4>Shreya Ghoshal</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+            <h4>Badshah</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/arijithsingh.jpg" alt="" />
+            <h4>Arijith Singh</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/selenagomez.jpg" alt="" />
+            <h4>Selena Gomez</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/sidsriram.jpg" alt="" />
+            <h4>Sid Sriram</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/dhvanibhanushali.jpg" alt="" />
+            <h4>Dhvani Bhanushali</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="scroll-hide aside-2">
+      <h1 class="aside-heading">Playlist</h1>
+
+      <ol>
+        <li>
+          <div class="song-queue">
+            <h3>01</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Amin
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>02</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Astagfrullah
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <h3>03</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Amin
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>04</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Astagfrullah
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <h3>05</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Amin
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>06</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Astagfrullah
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <h3>07</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Amin
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>08</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Astagfrullah
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <h3>09</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Amin
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>10</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Astagfrullah
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <h3>11</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Amin
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>12</h3>
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>
+              Astagfrullah
+              <p>Stan</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <footer id="player">
+      <div class="player-width">
+        <img src="Media/Images/Artists/stan.jpg" alt="" />
+        <h4>
+          Astagafrullah
+          <p>Stan</p>
+        </h4>
+        <i class="fa-solid fa-heart" style="color: #787878;"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-sharp fa-solid fa-play"></i>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </footer>
+  </body>
+</html>

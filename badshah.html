@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Melody</title>
+    <script
+      src="https://kit.fontawesome.com/540c70c2f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="Media/Images/Logo/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Part similar to all webpages for this Music player -->
+    <header class="nav-bar">
+      <div class="logo-fav">
+        <!-- Website Logo and Website Name-->
+        <div class="logo-name">
+          <div class="logo logo-anime">
+            <a href="index.html"
+              ><img
+                src="Media/Images/Logo/faviconbgtransparent.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+          <div class="website-name">
+            <h4>Music</h4>
+            <h3>Melody</h3>
+          </div>
+        </div>
+        <!-- Nav item- Favorites -->
+        <div class="fav">
+          <a href="#"><h3>Favorites</h3></a>
+        </div>
+      </div>
+
+      <!-- Search bar and icons -->
+      <div class="search-login">
+        <form id="searchbar" action="#">
+          <button id="search-btn" type="submit" cursor="pointer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input id="search-text" type="text" placeholder="Search..." />
+          <button id="mic-btn" type="submit" cursor="pointer">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+        </form>
+        <!-- Notifications icon -->
+        <div class="notifications">
+          <i class="fa-regular fa-bell"></i>
+        </div>
+        <!-- Login/Signup Page -->
+        <div class="login-link">
+          <a href="index.html"
+            ><img src="Media/Images/collections/col1.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+      <!-- Nav items of Hamburger for smaller screen  -->
+      <div class="dropdown-menu">
+        <a href="#dd-opt"> <i class="fa-solid fa-bars"></i></a>
+        <div id="dd-opt">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <hr />
+            <li><a href="#">Search</a></li>
+            <hr />
+            <li><a href="#">Notifications</a></li>
+            <hr />
+            <li><a href="#">Log In/Sign Up</a></li>
+            <hr />
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Main page starts here all the content of the page is divided to sections and fixing the main element -->
+
+    <main class="scroll-hide artist-biography-playlist">
+      <section id="artist-about">
+        <div id="artist-img">
+          <a href="#player"
+            ><img src="Media/Images/Artists/Badshah.jpg" alt=""
+          /></a>
+        </div>
+
+        <div id="artist-info">
+          <h1>Badshah of Bollywood</h1>
+          <p>
+            Aditya Prateek Singh Sisodia, better known by his stage name
+            Badshah,is an Indian rap-music composer rapper and singer known for
+            his Hindi, Haryanvi, and Punjabi songs. He started his career in
+            2006 alongside Yo Yo Honey Singh in his band Mafia Mundeer. He split
+            from Honey in 2012 and released his independent Haryanvi song Kar
+            Gayi Chull, which was later adopted into the 2016 Bollywood movie,
+            Kapoor & Sons. His music has been featured in Bollywood soundtracks
+            for films such as 2014 films Humpty Sharma Ki Dulhania and
+            Khoobsurat. He has also collaborated with artists such as Gippy
+            Grewal,Diljit Dosanjh, Manj Musik, Raftaar, Navv Inder and Aastha
+            Gill among others. His debut single, "DJ Waley Babu" featuring
+            Aastha Gill, was ranked number one on Indian i-tunes charts within
+            24 hours of the release. The song also crossed a million views on
+            YouTube within 30 hours.In 2016, he collaborated with Navv Inder on
+            Wakhra Swag which won the 2016 Punjabi Music Awards for best
+            duo/group and most popular song of the year award.
+          </p>
+        </div>
+      </section>
+
+      <section class="artist-playlist">
+        <header><h1>Play the best collection</h1></header>
+        <ol>
+          <li>
+            <div class="song-queue">
+              <h3>01</h3>
+              <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+              <h4>
+                Mercy
+                <p>Badshah</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>02</h3>
+              <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+              <h4>
+                Akh Lad
+                <p>Badshah</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>03</h3>
+              <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+              <h4>
+                Genda Phool
+                <p>Badshah</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+          <li>
+            <div class="song-queue">
+              <h3>04</h3>
+              <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+              <h4>
+                Mercy
+                <p>Badshah</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>05</h3>
+              <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+              <h4>
+                Akh Lad
+                <p>Badshah</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>06</h3>
+              <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+              <h4>
+                Genda Phool
+                <p>Badshah</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+          <li>
+            <div class="song-queue">
+              <h3>07</h3>
+              <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+              <h4>
+                Mercy
+                <p>Badshah</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>08</h3>
+              <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+              <h4>
+                Akh Lad
+                <p>Badshah</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="song-queue">
+              <h3>09</h3>
+              <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+              <h4>
+                Genda Phool
+                <p>Badshah</p>
+              </h4>
+              <i class="fa-solid fa-heart" style="color: #787878;"></i>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <div class="scroll-hide aside-1">
+      <h1 class="aside-heading">Similar Artists</h1>
+
+      <ol>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/honeysingh.jpg" alt="" />
+            <h4>Honey Singh</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/emiwaybantai.jpg" alt="" />
+            <h4>Emiway Bantai</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/shreyaghoshal.jpg" alt="" />
+            <h4>Shreya Ghoshal</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/stan.jpg" alt="" />
+            <h4>MC Stan</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/arijithsingh.jpg" alt="" />
+            <h4>Arijith Singh</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/selenagomez.jpg" alt="" />
+            <h4>Selena Gomez</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/sidsriram.jpg" alt="" />
+            <h4>Sid Sriram</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <img src="Media/Images/Artists/dhvanibhanushali.jpg" alt="" />
+            <h4>Dhvani Bhanushali</h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="scroll-hide aside-2">
+      <h1 class="aside-heading">Playlist</h1>
+
+      <ol>
+        <li>
+          <div class="song-queue">
+            <h3>01</h3>
+            <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+            <h4>
+              Mercy
+              <p>Badshah</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>02</h3>
+            <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+            <h4>
+              Akh Lad
+              <p>Badshah</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>03</h3>
+            <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+            <h4>
+              Genda Phool
+              <p>Badshah</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <h3>04</h3>
+            <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+            <h4>
+              Mercy
+              <p>Badshah</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>05</h3>
+            <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+            <h4>
+              Akh Lad
+              <p>Badshah</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>06</h3>
+            <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+            <h4>
+              Genda Phool
+              <p>Badshah</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+        <li>
+          <div class="song-queue">
+            <h3>07</h3>
+            <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+            <h4>
+              Mercy
+              <p>Badshah</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>08</h3>
+            <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+            <h4>
+              Akh Lad
+              <p>Badshah</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="song-queue">
+            <h3>09</h3>
+            <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+            <h4>
+              Genda Phool
+              <p>Badshah</p>
+            </h4>
+            <i class="fa-solid fa-heart" style="color: #787878;"></i>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <footer id="player">
+      <div class="player-width">
+        <img src="Media/Images/Artists/Badshah.jpg" alt="" />
+        <h4>
+          Genda Phool
+          <p>BadShah</p>
+        </h4>
+        <i class="fa-solid fa-heart" style="color: #787878;"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-sharp fa-solid fa-play"></i>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </footer>
+  </body>
+</html>

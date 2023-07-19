@@ -1,0 +1,788 @@
+/* Variables for styling */
+:root{
+    --page-text-color: white;
+    --page-background-color: #0d102a;
+}
+/* 
+Basic design for all elements 
+Removing margins and paddings
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing:border-box;
+}
+
+/* Website background n text color */
+body{
+    background-color: var(--page-background-color,#0d102a);
+    color: var(--page-text-color,white);
+    font-size: 14px;
+}
+
+/* Removing the default properties of some of the elements */
+a{
+    text-decoration: none;
+    color: var(--page-text-color, white);
+}
+i, input, textarea{
+    outline: none;
+    border: none;
+    color: var(--page-text-color, white);
+}
+
+ul, ol{
+    list-style-type: none;
+    list-style: none;
+}
+
+.width-40{
+    width: 25%;
+}
+
+/* Adding spacing to sections */
+section{
+    width: 100%;
+    display: block;
+    margin: 2rem auto;
+}
+
+.section-heading{
+    padding: 1vw;
+}
+/* Icon color change effect */
+.fa-heart{
+    transition: 0.3s ease-in-out !important;
+}
+.fa-heart:hover{
+    transform: scale(1.05);
+    color: red !important;
+}
+
+/*  Hide scrollbar for Chrome, Safari and Opera */
+.scroll-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-hide{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+} 
+
+/* header design */
+.nav-bar{
+    position: fixed;
+    height: 8vh;
+    min-height: 2rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-fav{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-name{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 3rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.fav a{
+    text-decoration: none;
+    color: var(--page-text-color, white);
+}
+
+.search-login{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+}
+
+form{
+    width: 50%;
+    border-radius: 0.4rem;
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#search-btn, #mic-btn, #search-text{
+    font-size: 1rem;
+    background: none;
+    border: none;
+}
+
+form input{
+    width: 80%;
+}
+
+form input:focus{
+    border: none;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    outline: none;
+    /* border-bottom: 0.1rem solid var(--page-text-color,white); */
+}
+
+
+.notifications i{
+    scale: 1.2;
+} 
+
+.login-link{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 55%;
+    overflow: hidden;
+}
+
+.login-link img{
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.dropdown-menu{
+    display: none;
+    position: relative;
+    width: 20%;
+}
+
+
+#dd-opt{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -5vw;
+    width: 20vw;
+    background-color: #0d102a;
+    color: white;
+}
+
+#dd-opt:target{
+    display: block;
+}
+
+
+
+/* Designing main body*/
+main{
+    position: fixed;
+    top: 10vh;
+    left: 1.5vw;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: none;
+    width: 70vw;
+}
+
+
+.collections{
+    display: flex;
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.collections>div{
+    width: 30%;
+}
+
+.collections div img{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.collections img:hover{
+    transform: scaleY(1.1);
+    transform: scaleX(1.1);
+    border-radius: 0.5rem;
+}
+
+
+/* Latest released songs */
+
+.latest-songs{
+    /* border: 2px solid white; */
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.new-song{
+    /* border: 2px solid white; */
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.6rem;
+}
+
+.sng-img{
+    /* width: 30%; */
+    width: 24%;
+    position: relative;
+}
+.lat-rel-img{
+    width: 100%;
+    /* min-width: 8vw; */
+}
+
+
+.sng-img a img:hover{
+    opacity: 0.4;
+}
+
+
+.play-but, .pause-but{
+    position: absolute;
+    margin-top: -4vw;
+    margin-left: 6vh;
+    transform:scale(2);
+    display: none;
+    z-index: 4;
+}
+
+.sng-img:hover .play-but{
+    display: block;
+
+}
+
+.sng-img:active .play-but{
+    display: none;
+
+}
+
+
+.sng-img:active .pause-but{
+    display: block;
+}
+
+.sng-title{
+    font-size: 0.8rem;
+    width: 40%;
+}
+.sng-det{
+    position: relative;
+    width: 15%;
+    display: inline-block;
+}
+
+.play-menu{
+    position: absolute;
+    z-index: 3;
+    display: none;
+    border-radius: 5px;
+    padding: 0.1rem;
+    text-align: center;
+    margin-left: -10vw;
+    background-color: white !important;
+    color: var(--page-background-color, black);
+    transition: 1s ease-in-out;
+}
+
+.sng-det:hover .play-menu{
+    display: block;
+}
+
+/* popular artists */
+.popular-artists{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artist{
+    width: 14%;
+    min-width: 10vw;
+    min-height: 12vh;
+}
+
+.artist div{
+    width: 100%;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.artist p{
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.artist div img{
+    width: 100%;
+    transition: 1s ease-in-out;
+}
+
+.artist div img:hover{
+    opacity: 0.6;
+    box-shadow: 0 0 1rem 0.5rem lightgrey;
+    transform: scale(1.03);
+}
+
+
+
+/* Stations section design */
+.stations{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#101845;
+    padding: 0.3rem;
+}
+
+#station-logo{
+    width: 18%;
+    border-radius: 0.25rem;
+}
+#station-logo img{
+    width: 100%;
+}
+#station-logo h4{
+    text-align: center;
+}
+
+.station-type{
+    position: relative;
+    width: 13%;
+    border-radius: 50%;
+    height: 100%;
+    min-height: 14vh;
+    overflow: hidden;
+}
+
+
+.station-type img{
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+
+}
+
+.station-type img:hover{
+    box-shadow: 0 0 0.2rem 0.1rem grey;
+    transform:scale(1.1);
+    opacity: 0.4;
+}
+
+.station-name{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Theme design */
+.theme-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.theme-section div{
+    width: 32%;
+    position: relative;
+    overflow: hidden;
+}
+.theme-section div img{
+    height: 100%;
+    min-height: 18vh;
+    min-width: 20vw;
+}
+
+
+.theme-section div h1{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    background-color: transparent;
+}
+
+.theme{
+    text-align: center;
+    width: 100%;
+    opacity: 0.3;
+    transition: 0.8s ease-in-out;
+}
+
+.theme:hover{
+    transform: scale(1.2);
+}
+
+
+/* Latest Hindi and English Releases */
+.latest-hinglish{
+    display: flex;
+    justify-content: space-around;
+}
+
+.latest-song{
+    width: 15%;
+    font-size: 8px;
+}
+
+.latest-song img{
+    width: 100%;
+    min-width: 10vw;
+    min-height: 12vh;
+}
+
+
+
+
+
+
+/* Footer Player Design */
+#player{
+    position: fixed;
+    top: 90vh;
+    left: 0vw;
+    right: 0vw;
+    height: 10vh;
+    display: none;
+    z-index: 2;
+    color: white;
+    box-shadow: 0 0 0.03rem 0.03rem lightgrey;
+
+}
+
+#player:target{
+    display: block;
+}
+
+.player-width{
+    width: 70%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.player-width img{
+    border-radius: 50%;
+    width: 7vw;
+    height: 9vh;
+}
+
+.player-width h4{
+    text-align: center;
+    width: 40%;
+
+}
+
+.player-width h4 p{
+    font-weight: 300;
+    font-size: 0.8rem;
+
+}
+
+.player-width i, .player-width a{
+    width: 2%;
+}
+
+
+
+/* Aside content design */
+aside{
+    position: fixed;
+    right: 2vw;
+    top: 10vh;
+    height: 80vh;
+    width: 25vw;
+    z-index: 1;
+}
+
+.aside-header{
+    display: fixed;
+    top: 10vh;
+    right: 2vw;
+    width: 25vw;
+    min-height:8vh;
+}
+
+.aside-header h1{
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+}
+.queue-options{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+}
+.queue-options span{
+    text-align: right;
+}
+
+#queue-content{
+    position: absolute;
+    z-index: 3;
+    display: none;
+    border-radius: 2px;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 0.7rem !important;
+    background-color: white !important;
+    color: var(--page-background-color, black);
+    min-width: 5vw; 
+    transition: 0.5s ease-in-out;
+}
+.queue-options:hover #queue-content{
+    display: block;
+}
+
+#aside-heading{
+    font-size: 1rem;
+}
+
+#aside-content{
+    position: fixed;
+    right: 2vw;
+    top: 20vh;
+    height: 70vh;
+    width: 25vw;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+
+.song-queue{
+    display: flex;
+    min-height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.song-queue img{
+    width: 10%;
+}
+
+.song-queue h4{
+    text-align: left;
+    width: 65%;
+}
+
+.song-queue h4 p{
+    font-weight: 300;
+    font-size: 0.8rem;
+
+}
+
+.song-queue i{
+    width: 8%;
+}
+
+
+/* Designing artist page */
+
+/* Aside  parts */
+#artist-img{
+    width: 100%;
+    text-align: center;
+}
+#artist-img img{
+    margin: 0.5rem;
+    float: left;
+    width: 40%;
+
+}
+
+.aside1-header{
+    display: fixed;
+    top: 10vh;
+    right: 2vw;
+    width: 25vw;
+    min-height:8vh;
+}
+
+
+#artist-img h1{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1rem;
+}
+#artist-img p{
+    /* float: right; */
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
+    line-height: 1.5rem;
+    font-weight: 450;
+    font-style:italic;
+    padding: 1rem;
+}
+
+.artist-biography-playlist{
+    width: 65vw;
+}
+
+.aside-1{
+    position: fixed;
+    top: 10vh;
+    width: 25vw;
+    height: 35vh;
+    right: 1vw;
+    z-index: 1;
+    overflow-y: scroll;
+    font-size: 0.8rem;
+
+}
+
+
+.aside-2{
+    position: fixed;
+    top: 55vh;
+    width: 25vw;
+    height: 30vh;
+    right: 1vw;
+    z-index: 1;
+    overflow-y: scroll;
+    font-size: 0.8rem;
+}
+
+.artist-playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+
+
+
+
+/* Media Queries to make the website responsive */
+
+@media screen and (max-width: 768px){
+    main{
+        width:95vw;
+    }
+    aside{
+        display:none;
+    }
+}
+
+@media screen and (max-width:576px){
+
+    /* Navbar style change */
+    .search-login{
+        display: none;
+    }
+    .logo-fav{
+        width: 50%;
+    }
+    .dropdown-menu{
+        display: block;
+        z-index: 4 !important;
+
+
+    }
+
+    
+    /* Collections Banners response on small screens */
+    main{
+        top: 15vh !important;
+        height: 75vh !important;
+    }
+    .collections{
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .collections>div{
+        width: 100%;
+    }
+
+    .collections div img{
+        width: 95%;
+        margin: auto;
+        margin-top: 0.5rem;
+    }
+
+    /* Latest Releases response on small screens */
+    .latest-songs{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .new-song{
+        width: 75%;
+    }
+
+    /* Popular artists */
+    .popular-artists{
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .artist{
+        width: 26%;
+        margin: 0.3rem;
+    }
+    
+    /* Stations response on smaller screens */
+    .stations{
+        flex-wrap: wrap;
+    }
+    #station-logo{
+        width: 30%;
+    }
+    .station-type{
+        width: 20%;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0.1rem;
+    }
+
+    /* Themes response */
+    .theme-section{
+        flex-direction: column;
+    }
+    .theme-section div{
+        width: 97%
+    }
+
+    /* Hinglish collection response */
+    .latest-hinglish{
+        flex-wrap: wrap;
+    }
+    .latest-song{
+        margin: 0.5rem;
+        width: 30%;
+    }
